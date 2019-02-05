@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#show_text').click(function(){
+            alert($("#text").text());
+        });
+
+        $('#show_html').click(function(){
+            alert($("#html").html());
+        });
+
+        $('#get_input').click(function(){
+            alert($('#input').val());
+        });
+    });
+</script>
+</head>
+<body>
+
+    <div id = "">
+        <p id = "html">This is <strong>HTML</strong> </p>
+        <p id = "text">This is <strong>Text</strong> </p>
+        <input id = "input" type  = "text">
+        <button id = "show_text">Show Text</button>
+        <button id = "show_html">Show HTML</button>
+        <button id = "get_input">Show Input</button>
+    </div>
+
+</body>
+</html>
