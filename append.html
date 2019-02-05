@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            $('#text').append(" "+$("#input").val());
+        });
+    });
+</script>
+</head>
+<body>
+
+<div>
+   <p id = "text">Here will append</p>
+   <input type = "text" id = "input">
+   <button id = "append">Append</button>
+</div>
+
+</body>
+</html>
